@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4a4a4a;
+}
+
+/* Form Styling */
+.note-form-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.note-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Important for padding and width */
+  font-size: 16px;
+}
+
+.note-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.note-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.note-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Notes List Styling */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card h3 {
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.note-card p {
+  flex-grow: 1; /* Makes content take up available space */
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  align-self: flex-end; /* Pushes button to the bottom right */
+  padding: 8px 15px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* ... (Keep all your existing CSS) ... */
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto; /* Pushes buttons to the bottom of the card */
+  padding-top: 10px;
+}
+
+.edit-btn {
+  padding: 8px 15px;
+  border: none;
+  background-color: #ffc107; /* A yellow color for edit */
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
